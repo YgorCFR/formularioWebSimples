@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Montagem de pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- JS -->
+    <script src="main.js"></script>
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div class="bloco-form" >    
+        <form name="form">
+            <h1>Formulário de pedido</h1>
+            <label for="fname">Nome:</label><input type="text" name="fname">
+            <label for="fIdade">Idade:</label><input type="number" name="fIdade"><br>
+            <label for="fprato">Prato:</label>
+            <label for="fpeq">Pequena:<input type="radio" name="fprato" value="pequeno"></label>
+            <label for="fmed">Média:<input type="radio" name="fprato" value="medio"></label>
+            <label for="fgrd">Grande:<input type="radio" name="fprato" value="grande"></label><br>
+            <label for="fning">Ingredientes:</label><input type="number" name="fning" min="2" max="6">
+            <br>
+            <input type="checkbox" name="foption" value="ovo">ovo
+            <input type="checkbox" name="foption" value="bacon">bacon
+            <input type="checkbox" name="foption" value="azeitona">azeitona<br>
+            <input type="checkbox" name="foption" value="queijo">queijo
+            <input type="checkbox" name="foption" value="presunto">presunto
+            <input type="checkbox" name="foption" value="cogumelo">cogumelo
+            <input type="checkbox" name="foption" value="ervilha">ervilha
+            <input type="checkbox" name="foption" value="cebola">cebola
+            <input type="button" onClick="verificarFormulario()" value="Verificar">
+        </form>
+    </div>
+</body>
+</html>
